@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar Tarefas</title>
+    <link rel="stylesheet" href="../static/style/listarTarefa.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="titulo">Listar Tarefas</h1>
+        <div class="links">
+            <a href="" class="link">Home</a>
+            <a href="" class="link">Sobre</a>
+            <a href="" class="link">Ajuda</a>
+        </div>
+    </header>
+    <main class="container">
+        <aside class="barra_lateral">
+            <ul class="lista_lateral">
+                <li class="lista_conteudos">conteudo 1</li>
+                <li class="lista_conteudos">conteudo 2</li>
+                <li class="lista_conteudos">conteudo 3</li>
+                <li class="lista_conteudos">conteudo 4</li>
+            </ul>
+        </aside>
+        <section class="secao">
+            <div class="tarefas">
+                <table id="tbtarefas">
+                    <thead>
+                        <tr>
+                            <th>id</th>
+                            <th>titulo</th>
+                            <th>descrição</th>
+                            <th>Concluido</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <div id="cadastrar">
+                <button id="botao_cadastrar">
+                    <p>cadastrar</p>
+                </button>
+                <div id="form_cadastro">
+                    <button id="fechar">fechar</button>
+                    <form class="form_cadastro" action="" method="post">
+                        <label for="titulo">Titulo:</label>
+                        <input type="text" name="titulo" placeholder="titulo">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" name="descricao" placeholder="descrição">
+                        <select name="" id="">
+                            <option value="" disabled selected>Concluido?</option>
+                            <option value="sim">Sim</option>
+                            <option value="não">Não</option>
+                        </select>
+                        <button id="botao_cadastrar" type="submit">cadastrar</button>
+                    </form>
+        
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Eduardo Lucas</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="../static/scripts/index.js"></script>
+</body>
+</html>
